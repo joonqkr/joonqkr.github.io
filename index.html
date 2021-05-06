@@ -12,113 +12,140 @@
   <body>
     <!-- Navigation bar buttons -->
     <header>
+      <div class="header-text" id="name">Joon Park</div>
       <div class="navbar">
-        <div id="intro-button">Intro</div>
-        <div id="exp-button">Experience</div>
-        <div id="edu-button">Education</div>
-        <div id="projects-button">Projects</div>
-        <div id="interests-button">Interests</div>
-        <div id="resume-button">Resume</div>
+        <div class="header-text" id="intro-button">Intro</div>
+        <div class="header-text" id="exp-button">Experience</div>
+        <div class="header-text" id="edu-button">Education</div>
+        <!-- <div class="header-text" id="projects-button">Projects</div> -->
+        <div class="header-text" id="interests-button">Interests</div>
+        <!-- <div class="header-text" id="resume-button">Resume</div> -->
       </div>
     </header>
 
-    <!-- Content about myself -->
+      <!-- Content about myself -->
     <div class="content">
       <!-- Intro to website -->
-      <section id="intro">
-        <img src="assets/img/profile_circle.png" alt="photo of Joon">
-        <div class="big">Hi! My name is Joon Park. Welcome to my personal website.</div>
-      </section>
+      <div id="intro">
+        <div id="profile">
+          <img src="assets/img/profile_circle.png" alt="photo of Joon">
+        </div>
+        <div id="big">Hi! My name is Joon Park. Welcome to my personal website.</div>
+      </div>
 
       <!-- Work experience -->
-      <section id="exp">
+      <div class="parts">
         <div class="label">Experience:</div>
 
-        <!-- My Favorite Run internship -->
-        <div class="box">
-          <img class="logo" src="assets/img/myfavoriterun.jpeg" alt="My Favorite Run logo">
-          <div class="description">
-            <h1>Web Developer</h1>
-            <h2>My Favorite Run</h2>
-            <h3>May 2021 - Present</h3>
+        <div class="items">
+          <!-- My Favorite Run internship -->
+          <div class="box">
+            <div class="logo">
+              <img src="assets/img/myfavoriterun.jpeg" alt="My Favorite Run logo">
+            </div>
+            <div class="description">
+              <h1>Web Developer</h1>
+              <h2>My Favorite Run</h2>
+              <h3>May 2021 - Present</h3>
+            </div>
+          </div>
+
+          <!-- Juni Learning -->
+          <div class="box">
+            <div class="logo">
+              <img src="assets/img/juni.png" alt="Juni Learning logo">
+            </div>
+            <div class="description">
+              <h1>Computer Science Instructor</h1>
+              <h2>Juni Learning</h2>
+              <h3>May 2021 - Present</h3>
+            </div>
+          </div>
+
+          <!-- Korizon internship -->
+          <div class="box">
+            <div class="logo">
+              <img src="assets/img/korizon.jpeg" alt="Korizon logo">
+            </div>
+            <div class="description">
+              <h1>Content Translator</h1>
+              <h2>Korizon</h2>
+              <h3>August 2020 - Present</h3>
+            </div>
+          </div>
+
+          <!-- Kumon -->
+          <div class="box">
+            <div class="logo">
+              <img class="logo" src="assets/img/kumon.jpeg" alt="Kumon logo">
+            </div>
+            <div class="description">
+              <h1>Math & English Instructor</h1>
+              <h2>Kumon</h2>
+              <h3>August 2018 - March 2019</h3>
+            </div>
           </div>
         </div>
 
-        <!-- Juni Learning -->
-        <div class="box">
-          <img class="logo" src="assets/img/juni.png" alt="Juni Learning logo">
-          <div class="description">
-            <h1>Computer Science Instructor</h1>
-            <h2>Juni Learning</h2>
-            <h3>May 2021 - Present</h3>
-          </div>
-        </div>
-
-        <!-- Korizon internship -->
-        <div class="box">
-          <img class="logo" src="assets/img/korizon.jpeg" alt="Korizon logo">
-          <div class="description">
-            <h1>Content Translator</h1>
-            <h2>Korizon</h2>
-            <h3>August 2020 - Present</h3>
-          </div>
-        </div>
-
-        <!-- Kumon -->
-        <div class="box">
-          <img class="logo" src="assets/img/kumon.jpeg" alt="Kumon logo">
-          <div class="description">
-            <h1>Math & English Instructor</h1>
-            <h2>Kumon</h2>
-            <h3>August 2018 - March 2019</h3>
-          </div>
-        </div>
-      </section>
+      </div>
 
       <!-- Education -->
-      <section id="edu">
+      <div class="parts">
         <div class="label">Education:</div>
-        <div class="box">
-          <img class="logo" src="assets/img/berkeley.png" alt="Berkeley logo">
-          <div class="description">
-            <h1>University of California, Berkeley</h1>
-            <h2>BA in Computer Science</h2>
-            <h3>August 2019 - Present</h3>
-            <h4>GPA: 3.682</h4>
+        <div class="items">
+          <div class="box">
+            <div class="logo">
+              <img src="assets/img/berkeley.png" alt="Berkeley logo">
+            </div>
+            <div class="description">
+              <h1>University of California, Berkeley</h1>
+              <h2>BA in Computer Science</h2>
+              <h3>August 2019 - Present</h3>
+              <h4>GPA: 3.682</h4>
+            </div>
           </div>
         </div>
-      </section>
+
+      </div>
 
       <!-- Personal projects -->
-      <!-- <section id="projects">
+      <!-- <div id="projects">
         <div class="label">Projects:</div>
         <div class="box">
           <img class="logo" src="" alt="">
         </div>
-      </section> -->
+      </div> -->
 
       <!-- Non-cs interests -->
-      <section id="interests">
+      <div class="parts">
         <div class="label">Interests:</div>
 
-        <!-- Esports -->
-        <div class="box">
-          <img class="logo" src="assets/img/esports.jpeg" alt="esports logo">
-          <div class="description">
-            <h1>Esports</h1>
-            <h2>League of Legends</h2>
+        <div class="items">
+          <!-- Esports -->
+          <div class="box">
+            <div class="logo">
+              <img src="assets/img/esports.jpeg" alt="esports logo">
+            </div>
+            <div class="description">
+              <h1>Esports</h1>
+              <h2>League of Legends</h2>
+            </div>
           </div>
-        </div>
 
-        <!-- Crocheting -->
-        <div class="box">
-          <img class="logo" src="assets/img/crochet.jpeg" alt="crochet logo">
-          <div class="description">
-            <h1>Crocheting</h1>
+          <!-- Crocheting -->
+          <div class="box">
+            <div class="logo">
+              <img src="assets/img/crochet.jpeg" alt="crochet logo">
+            </div>
+            <div class="description">
+              <h1>Crocheting</h1>
+            </div>
           </div>
         </div>
 
     </div>
+
+
     <!-- <div class="animation">
       <svg width="150" height="150" id="svg">
         <polygon points="70.0, 70.0
