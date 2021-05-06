@@ -1,34 +1,148 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <!-- General website meta data -->
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="author" content="Joon Park">
+    <title>Joon Park</title>
     <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+    <script src="assets/scripts/index.js"></script>
   </head>
+
   <body>
-    <svg width="150" height="150" id="svg">
-      <polygon points="70.0, 70.0
-      30.9230680601, 50.0893086884
-      3.30792245649, 61.8112425431
-      27.2669877579, 79.8656932377
-      70.0, 70.0
-      38.9883712267, 101.011628773
-      41.6030435092, 130.897469716
-      66.1776048378, 113.690176625
-      70.0, 70.0
-      89.9106913116, 109.07693194
-      119.141793255, 115.82546357
-      110.370642113, 87.1363208914
-      70.0, 70.0
-      113.317112743, 63.1392433417
-      128.768254991, 37.4242243206
-      98.7728241359, 36.9006521275
-      70.0, 70.0
-      76.8607566583, 26.6828872567
-      57.1789857886, 4.04159984999
-      47.4119411549, 32.407157118"
-      style="fill:none;stroke:#dfbdff;stroke-width:4;" />
-    </svg>
-  <script src="assets/scripts/index.js"></script>
+    <!-- Navigation bar buttons -->
+    <header>
+      <div class="navbar">
+        <div id="intro-button">Intro</div>
+        <div id="exp-button">Experience</div>
+        <div id="edu-button">Education</div>
+        <div id="projects-button">Projects</div>
+        <div id="interests-button">Interests</div>
+        <div id="resume-button">Resume</div>
+      </div>
+    </header>
+
+    <!-- Content about myself -->
+    <div class="content">
+      <!-- Intro to website -->
+      <section id="intro">
+        <img src="assets/img/profile_circle.png" alt="photo of Joon">
+        <div class="big">Hi! My name is Joon Park. Welcome to my personal website.</div>
+      </section>
+
+      <!-- Work experience -->
+      <section id="exp">
+        <div class="label">Experience:</div>
+
+        <!-- My Favorite Run internship -->
+        <div class="box">
+          <img class="logo" src="assets/img/myfavoriterun.jpeg" alt="My Favorite Run logo">
+          <div class="description">
+            <h1>Web Developer</h1>
+            <h2>My Favorite Run</h2>
+            <h3>May 2021 - Present</h3>
+          </div>
+        </div>
+
+        <!-- Juni Learning -->
+        <div class="box">
+          <img class="logo" src="assets/img/juni.png" alt="Juni Learning logo">
+          <div class="description">
+            <h1>Computer Science Instructor</h1>
+            <h2>Juni Learning</h2>
+            <h3>May 2021 - Present</h3>
+          </div>
+        </div>
+
+        <!-- Korizon internship -->
+        <div class="box">
+          <img class="logo" src="assets/img/korizon.jpeg" alt="Korizon logo">
+          <div class="description">
+            <h1>Content Translator</h1>
+            <h2>Korizon</h2>
+            <h3>August 2020 - Present</h3>
+          </div>
+        </div>
+
+        <!-- Kumon -->
+        <div class="box">
+          <img class="logo" src="assets/img/kumon.jpeg" alt="Kumon logo">
+          <div class="description">
+            <h1>Math & English Instructor</h1>
+            <h2>Kumon</h2>
+            <h3>August 2018 - March 2019</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="edu">
+        <div class="label">Education:</div>
+        <div class="box">
+          <img class="logo" src="assets/img/berkeley.png" alt="Berkeley logo">
+          <div class="description">
+            <h1>University of California, Berkeley</h1>
+            <h2>BA in Computer Science</h2>
+            <h3>August 2019 - Present</h3>
+            <h4>GPA: 3.682</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal projects -->
+      <!-- <section id="projects">
+        <div class="label">Projects:</div>
+        <div class="box">
+          <img class="logo" src="" alt="">
+        </div>
+      </section> -->
+
+      <!-- Non-cs interests -->
+      <section id="interests">
+        <div class="label">Interests:</div>
+
+        <!-- Esports -->
+        <div class="box">
+          <img class="logo" src="assets/img/esports.jpeg" alt="esports logo">
+          <div class="description">
+            <h1>Esports</h1>
+            <h2>League of Legends</h2>
+          </div>
+        </div>
+
+        <!-- Crocheting -->
+        <div class="box">
+          <img class="logo" src="assets/img/crochet.jpeg" alt="crochet logo">
+          <div class="description">
+            <h1>Crocheting</h1>
+          </div>
+        </div>
+
+    </div>
+    <!-- <div class="animation">
+      <svg width="150" height="150" id="svg">
+        <polygon points="70.0, 70.0
+        30.9230680601, 50.0893086884
+        3.30792245649, 61.8112425431
+        27.2669877579, 79.8656932377
+        70.0, 70.0
+        38.9883712267, 101.011628773
+        41.6030435092, 130.897469716
+        66.1776048378, 113.690176625
+        70.0, 70.0
+        89.9106913116, 109.07693194
+        119.141793255, 115.82546357
+        110.370642113, 87.1363208914
+        70.0, 70.0
+        113.317112743, 63.1392433417
+        128.768254991, 37.4242243206
+        98.7728241359, 36.9006521275
+        70.0, 70.0
+        76.8607566583, 26.6828872567
+        57.1789857886, 4.04159984999
+        47.4119411549, 32.407157118"
+        style="fill:none;stroke:#dfbdff;stroke-width:4;" />
+      </svg>
+    </div> -->
   </body>
 </html>
