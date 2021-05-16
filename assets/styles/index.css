@@ -18,6 +18,11 @@ header {
   top: 0;
   position: fixed;
 
+  /* border underneath */
+  border-bottom-style: solid;
+  border-color: #BEB7DF;
+
+
   background-color: #FFB7C3;
 }
 
@@ -36,7 +41,7 @@ header {
 .content {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -116,6 +121,25 @@ header {
   margin: 3%;
 }
 
+/* adjusts text margins */
 h1, h2, h3, h4 {
+  margin: 0.5%;
+}
+
+/* text sizes */
+h1 {
+  font-size: 1.7vw;
+}
+
+h2, h4 {
+  font-size: 1.2vw;
+}
+
+h3 {
+  font-size: 1.0vw;
+}
+
+h5 {
+  font-size: 2.5vw;
   margin: 0;
 }
