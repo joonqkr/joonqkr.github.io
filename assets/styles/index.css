@@ -22,7 +22,6 @@ header {
   border-bottom-style: solid;
   border-color: #BEB7DF;
 
-
   background-color: #FFB7C3;
 }
 
@@ -120,9 +119,6 @@ header {
   flex-direction: column;
   margin: 3%;
 }
-
-
-
 
 /* adjusts text margins */
 h1, h2, h3, h4 {
