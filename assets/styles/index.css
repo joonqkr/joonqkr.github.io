@@ -121,6 +121,9 @@ header {
   margin: 3%;
 }
 
+
+
+
 /* adjusts text margins */
 h1, h2, h3, h4 {
   margin: 0.5%;
@@ -143,4 +146,3 @@ h5 {
   font-size: 2.5vw;
   margin: 0;
 }
-
