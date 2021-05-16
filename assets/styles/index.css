@@ -1,35 +1,35 @@
 body {
+  margin: 0;
+  padding: 0;
+
   background-color: ;
   color: #3A405A;
-  font-family: monaco;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   max-width: 100%;
 }
 
-/* Navigation Bar */
+/* -- NAVIGATION BAR -- */
+header {
+  /* keeps header fixed at top */
+  width: 100%;
+  top: 0;
+  position: fixed;
+
+  background-color: #FFB7C3;
+}
+
 .header-text {
   padding: 1% 3% 1% 3%;
   margin: 0% 2% 0% 2%;
 }
 
-header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  background-color: #FFB7C3;
-}
-
 .navbar {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
 }
 
 /* Content */
