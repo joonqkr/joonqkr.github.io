@@ -20,7 +20,7 @@ header {
 
   /* border underneath */
   border-bottom-style: solid;
-  border-color: #BEB7DF;
+  border-color: #9CAFB7;
 
   background-color: #FFB7C3;
 }
@@ -38,6 +38,7 @@ header {
 
 /* buttons stylign */
 a {
+  color: #3A405A;
   text-decoration: none;
 }
 
@@ -60,8 +61,9 @@ a:hover {
   justify-content: center;
   width: 70%;
   margin: auto;
-  margin-top: 40vh;
-  margin-bottom: 40vh;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+
 }
 
 /* proportion image and intro summary */
@@ -154,6 +156,7 @@ h3 {
 
 h5 {
   font-size: 2.5vw;
+  font-weight: 800;
   margin: 0;
 }
 
