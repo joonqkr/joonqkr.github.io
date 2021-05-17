@@ -30,10 +30,19 @@ header {
   margin: 0% 2% 0% 2%;
 }
 
-.navbar {
+#navbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+/* buttons stylign */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* -- CONTENT -- */
@@ -77,6 +86,7 @@ header {
   display: flex;
   flex-direction: column;
   margin: 7%;
+  padding-top: 10%;
 }
 
 /* Putting the section labels towards the left */
@@ -134,6 +144,10 @@ h2, h4 {
   font-size: 1.2vw;
 }
 
+ul, dl {
+  font-size: 1.1vw;
+}
+
 h3 {
   font-size: 1.0vw;
 }
@@ -141,4 +155,13 @@ h3 {
 h5 {
   font-size: 2.5vw;
   margin: 0;
+}
+
+#big {
+  font-size: 1.25vw;
+}
+
+/* smooth scroll behavior for whole page */
+html {
+  scroll-behavior: smooth;
 }

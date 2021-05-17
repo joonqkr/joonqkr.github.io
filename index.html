@@ -8,18 +8,17 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="assets/scripts/index.js"></script>
   </head>
 
   <body>
     <!-- Navigation bar buttons -->
     <header>
-      <div class="navbar">
-        <div class="header-text" id="intro-button">Intro</div>
-        <div class="header-text" id="exp-button">Experience</div>
-        <div class="header-text" id="edu-button">Education</div>
+      <div id="navbar">
+        <a class="header-text" id="intro-button" href="#">Intro</a>
+        <a class="header-text" id="exp-button" href="#experience">Experience</a>
+        <a class="header-text" id="edu-button" href="#education">Education</a>
         <!-- <div class="header-text" id="projects-button">Projects</div> -->
-        <div class="header-text" id="interests-button">Interests</div>
+        <a class="header-text" id="interests-button" href="#interests">Interests</a>
         <!-- <div class="header-text" id="resume-button">Resume</div> -->
       </div>
     </header>
@@ -36,7 +35,7 @@
     <div class="content">
 
       <!-- Work experience -->
-      <div class="parts">
+      <div class="parts" id="experience">
         <div class="label"><h5>Experience:</h5></div>
 
         <div class="items">
@@ -108,7 +107,7 @@
       </div>
 
       <!-- Education -->
-      <div class="parts">
+      <div class="parts" id="education">
         <div class="label"><h5>Education:</h5></div>
         <div class="items">
           <div class="box">
@@ -141,7 +140,7 @@
       </div> -->
 
       <!-- Non-cs interests -->
-      <div class="parts">
+      <div class="parts" id="interests">
         <div class="label"><h5>Interests:</h5></div>
 
         <div class="items">
@@ -168,5 +167,6 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="assets/scripts/index.js"></script>
   </body>
 </html>
