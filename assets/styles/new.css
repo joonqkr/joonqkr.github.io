@@ -7,20 +7,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin: auto;
+
+  color: #3A405A;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   max-width: 100%;
 }
 
-#window-cont {
-  display: flex;
-  flex-direction: column;
+/* the "window" */
+#frame {
+  width: 80%;
+  height: 100%;
   border-style: solid;
   border-color: #9CAFB7;
-  width: 80%;
-  height: 80%;
-  margin: 0.5% 0%;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+
+.window {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  /* overflow: auto; */
 }
 
 #browser-top {
@@ -29,7 +43,12 @@ img {
   justify-content: flex-start;
   align-items: center;
 
-  margin: 0;
+  border-style: solid;
+  border-color: #9CAFB7;
+
+  margin-top: 1%;
+  margin-bottom: 0;
+  width: 80%;
 
   background-color: #9CAFB7;
 }
@@ -52,6 +71,56 @@ img {
   background-color: #B9314F;
 }
 
+/* content */
+#about, #education, #experience, #interests, #frame, #browser-top {
+  visibility: hidden;
+}
+
+.parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0.5%;
+}
+
+/* separates work company logo and description */
+.box div:nth-of-type(1) {
+  flex-basis: 20%;
+}
+
+.box div:nth-of-type(2) {
+  flex-basis: 80%;
+}
+
+.logo {
+  margin: 3%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+
+/* adjusts text margins */
+h1, h2, h3, h4 {
+  margin: 0.5%;
+}
+
+/* navigation buttons */
 #buttons {
   display: flex;
   flex-direction: row;
@@ -64,11 +133,3 @@ img {
 .sections {
   margin: 20% 10%;
 }
-
-/* body div:nth-of-type(1) {
-  flex-basis: 75%;
-}
-
-body div:nth-of-type(2) {
-  flex-basis: 25%;
-} */
