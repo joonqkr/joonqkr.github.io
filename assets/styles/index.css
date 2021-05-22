@@ -10,6 +10,7 @@ body {
   width: 100%;
   margin: auto;
 
+  background-color: #FEF8D3;
   color: #3A405A;
   font-family: 'Montserrat', sans-serif;
 }
@@ -27,6 +28,7 @@ img {
   margin: 0 auto;
   position: relative;
   overflow: auto;
+  background-color: #FFFFFF;
 }
 
 .window {
@@ -34,6 +36,7 @@ img {
   width: 100%;
   top: 0;
   bottom: 0;
+  background-color: #FFFFFF;
   /* overflow: auto; */
 }
 
