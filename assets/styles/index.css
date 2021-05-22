@@ -1,8 +1,15 @@
-body {
+html, body {
   margin: 0;
-  padding: 0;
+  height: 100%;
+}
 
-  background-color: ;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+
   color: #3A405A;
   font-family: 'Montserrat', sans-serif;
 }
@@ -11,96 +18,74 @@ img {
   max-width: 100%;
 }
 
-/* -- NAVIGATION BAR -- */
-header {
-  /* keeps header fixed at top */
+/* the "window" */
+#frame {
+  width: 80%;
+  height: 100%;
+  border-style: solid;
+  border-color: #9CAFB7;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+
+.window {
+  position: absolute;
   width: 100%;
   top: 0;
-  position: fixed;
+  bottom: 0;
+  /* overflow: auto; */
+}
 
-  /* border underneath */
-  border-bottom-style: solid;
+#browser-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-style: solid;
   border-color: #9CAFB7;
 
-  background-color: #FFB7C3;
+  margin-top: 1%;
+  margin-bottom: 0;
+  width: 80%;
+
+  background-color: #9CAFB7;
 }
 
-.header-text {
-  padding: 1% 3% 1% 3%;
-  margin: 0% 2% 0% 2%;
+.circle {
+  border-radius: 50%;
+  background-color: #3A405A;
+
+  margin: 0.5%;
+  width: 2%;
 }
 
-#navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.circle:before {
+    content:     "";
+    display:     block;
+    padding-top: 100%;
 }
 
-/* buttons stylign */
-a {
-  color: #3A405A;
-  text-decoration: none;
+#exit {
+  background-color: #B9314F;
 }
 
-a:hover {
-  text-decoration: underline;
+/* content */
+#education, #experience, #interests {
+  visibility: hidden;
 }
 
-/* -- CONTENT -- */
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: auto;
-}
-
-/* -- INTRO SECTION -- */
-#intro {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 70%;
-  margin: auto;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
-
-}
-
-/* proportion image and intro summary */
-#intro div:nth-of-type(1) {
-  flex-basis: 20%;
-}
-
-#intro div:nth-of-type(2) {
-  flex-basis: 80%;
-}
-
-/* centering the intro summary */
-#big {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* -- NON-INTRO SECTIONS -- */
 .parts {
   display: flex;
   flex-direction: column;
-  margin: 7%;
-  padding-top: 10%;
-}
-
-/* Putting the section labels towards the left */
-.label {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .items {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .box {
@@ -108,9 +93,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  /* background-color: #BEB7DF;
-  color: #3A405A; */
-  margin: 2%;
+  margin: 0.5%;
 }
 
 /* separates work company logo and description */
@@ -137,34 +120,16 @@ h1, h2, h3, h4 {
   margin: 0.5%;
 }
 
-/* text sizes */
-h1 {
-  font-size: 1.7vw;
+/* navigation buttons */
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 10%;
 }
 
-h2, h4 {
-  font-size: 1.2vw;
-}
-
-ul, dl {
-  font-size: 1.1vw;
-}
-
-h3 {
-  font-size: 1.0vw;
-}
-
-h5 {
-  font-size: 2.5vw;
-  font-weight: 800;
-  margin: 0;
-}
-
-#big {
-  font-size: 1.25vw;
-}
-
-/* smooth scroll behavior for whole page */
-html {
-  scroll-behavior: smooth;
+.sections {
+  margin: 20% 10%;
 }
