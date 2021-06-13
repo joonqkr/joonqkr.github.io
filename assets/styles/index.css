@@ -82,7 +82,7 @@ img {
 }
 
 /* content */
-#education, #experience, #interests, #skills {
+#education, #experience, #interests, #skills, #projects {
   visibility: hidden;
 }
 

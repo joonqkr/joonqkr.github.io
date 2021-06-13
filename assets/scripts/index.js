@@ -40,6 +40,7 @@ let expButton = document.getElementById("exp-button");
 let skiButton = document.getElementById("skills-button");
 let eduButton = document.getElementById("edu-button");
 let interButton = document.getElementById("inter-button");
+let projButton = document.getElementById("proj-button");
 
 /* functions for clicking each button */
 function about() { change_section("about"); }
@@ -47,6 +48,7 @@ function exp() { change_section("experience"); }
 function ski() { change_section("skills"); }
 function edu() { change_section("education"); }
 function int() { change_section("interests"); }
+function proj() { change_section("projects"); }
 
 /* what happens when each button is clicked */
 exitButton.onclick = close_all;
@@ -55,3 +57,4 @@ expButton.onclick = exp;
 skiButton.onclick = ski;
 eduButton.onclick = edu;
 interButton.onclick = int;
+projButton.onclick = proj;
