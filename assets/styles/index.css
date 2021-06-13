@@ -75,7 +75,7 @@ img {
 }
 
 /* content */
-#education, #experience, #interests {
+#education, #experience, #interests, #skills {
   visibility: hidden;
 }
 
