@@ -11,15 +11,24 @@ function close_all() {
   }
 }
 
-/* open window of section with id "next" */
+/* open window of section with id next */
 function change_section(next) {
   close_all();
+
+  /* keep the frame and browserTop visible at all times */
   let browserTop = document.getElementById("browser-top");
   let frame = document.getElementById("frame");
   browserTop.style.visibility = "visible";
   frame.style.visibility = "visible";
+
+  /* make the specified section visible */
   sectionToShow = document.getElementById(next);
   sectionToShow.style.visibility = "visible";
+
+  /* change the title on the browser */
+  let browserTitle = document.getElementById("browser-title");
+  let newTitle = next.toUpperCase();
+  browserTitle.innerHTML = newTitle;
 }
 
 /* red exit button on all windows */
