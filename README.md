@@ -10,11 +10,6 @@ Personal website.
 * [Room for Improvement](#room-for-improvement)
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 Personal website with my occupation, education, and skills history, along with other information about myself.
 
 ## Technologies Used
