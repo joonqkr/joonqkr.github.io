@@ -10,8 +10,8 @@ body {
   width: 100%;
   margin: auto;
 
-  background-color: #FEF8D3;
-  color: #3A405A;
+  background-color: #DFE0F6;
+  color: #2E2D4D;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -58,7 +58,7 @@ img {
 
 .circle {
   border-radius: 50%;
-  background-color: #3A405A;
+  background-color: #2E2D4D;
 
   margin: 0.5%;
   width: 2%;
