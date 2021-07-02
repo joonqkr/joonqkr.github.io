@@ -1,6 +1,6 @@
 # joonqkr.github.io
 Personal website.
-[joonqkr.github.io](joonqkr.github.io)
+[joonqkr.github.io](joonqkr.github.io/joonqkr.github.io)
 
 ## Table of Contents
 * [General Info](#general-information)
