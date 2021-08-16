@@ -1,9 +1,19 @@
+/* shows the element with the id label */
+function show(label) {
+  let element = document.getElementById(label);
+  element.style.visibility = "visible";
+}
+
+/* hides the element with the id label */
+function hide(label) {
+  let element = document.getElementById(label);
+  element.style.visibility = "hidden";
+}
+
 /* closes all the "windows" that are open */
 function close_all() {
-  let browserTop = document.getElementById("browser-top");
-  let frame = document.getElementById("frame");
-  browserTop.style.visibility = "hidden";
-  frame.style.visibility = "hidden";
+  hide("browser-top");
+  hide("frame")
 
   let allWindows = document.getElementsByClassName("window");
   for (i = 0; i < allWindows.length; i++) {
@@ -16,14 +26,11 @@ function change_section(next) {
   close_all();
 
   /* keep the frame and browserTop visible at all times */
-  let browserTop = document.getElementById("browser-top");
-  let frame = document.getElementById("frame");
-  browserTop.style.visibility = "visible";
-  frame.style.visibility = "visible";
+  show("browser-top");
+  show("frame")
 
   /* make the specified section visible */
-  sectionToShow = document.getElementById(next);
-  sectionToShow.style.visibility = "visible";
+  show(next)
 
   /* change the title on the browser */
   let browserTitle = document.getElementById("browser-title");
